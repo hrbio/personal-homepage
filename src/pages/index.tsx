@@ -1,10 +1,9 @@
+import Logo from '@/components/Logo'
 import type { NextPage } from 'next'
 
 const Home: NextPage = () => {
   return (
-    <h1 className="">
-      Home Page
-    </h1>
+	<Logo></Logo>
   )
 }
 

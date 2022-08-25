@@ -9,7 +9,7 @@ const NavBar: FC = () => {
 	const router = useRouter();
 
 	return (
-		<div className='flex flex-row justify-evenly uppercase text-lg font-bold w-4/5 pt-16'>
+		<div className='flex flex-row justify-evenly uppercase text-lg font-bold w-4/5 py-16 '>
 			<NavLink to='/' title='Home'></NavLink>
 			<NavLink to='/about-me' title='About Me'></NavLink>
 			<NavLink to='/my-works' title='My works'></NavLink>

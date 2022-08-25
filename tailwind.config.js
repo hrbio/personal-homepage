@@ -3,7 +3,9 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
-		'sans': ['Lato', 'sans-serif']
+		'sans': ['Lato', 'sans-serif'],
+		'logo': ['Fraunces', 'serif'],
+		'greeting': ['B612 Mono', 'monospace']
 	}
   },
   plugins: [],
