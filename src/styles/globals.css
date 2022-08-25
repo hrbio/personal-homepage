@@ -63,3 +63,7 @@ picture, svg {
 		scroll-behavior: auto !important;
 	}
 }
+
+body {
+	@apply bg-stone-700 text-gray-300;
+}
