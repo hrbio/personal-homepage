@@ -1,7 +1,9 @@
-import type { NextPage } from 'next'
+import type { NextPage } from 'next';
+import { useTheme } from 'next-themes';
 
 const AboutMe: NextPage = () => {
-	return (<h1>About Me</h1>);
-}
- 
+	const { theme, setTheme } = useTheme();
+	return <h1>About Me</h1>;
+};
+
 export default AboutMe;

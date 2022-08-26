@@ -12,6 +12,7 @@
     "@heroicons/react": "^2.0.7",
     "@types/three": "^0.143.1",
     "next": "12.2.5",
+    "next-themes": "^0.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "three": "^0.143.0"

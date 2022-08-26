@@ -46,7 +46,7 @@ export default function Document() {
 					rel='stylesheet'
 				/>
 
-				<title>Dominik Pilipczuk</title>
+				
 			</Head>
 			<body>
 				<Main />

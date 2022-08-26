@@ -65,5 +65,5 @@ picture, svg {
 }
 
 body {
-	@apply bg-stone-700 text-gray-300;
+	@apply dark:bg-stone-900 dark:text-gray-300 bg-sky-50 text-neutral-700 transition-colors;
 }

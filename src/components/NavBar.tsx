@@ -1,15 +1,16 @@
-import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { FC } from 'react';
 import ActionButton from './ActionButton';
-import { GlobeEuropeAfricaIcon, SunIcon } from '@heroicons/react/24/outline';
+import { GlobeEuropeAfricaIcon, MoonIcon, SunIcon } from '@heroicons/react/24/outline';
 import NavLink from './NavLink';
+import { useTheme } from 'next-themes';
 
 const NavBar: FC = () => {
-	const router = useRouter();
+	const {theme, setTheme} = useTheme();
+
+	const isDarkTheme = theme === 'dark';
 
 	return (
-		<div className='flex flex-row justify-evenly uppercase text-lg font-bold w-4/5 py-16 '>
+		<div className='flex flex-row justify-evenly uppercase text-lg font-bold py-16 w-full'>
 			<NavLink to='/' title='Home'></NavLink>
 			<NavLink to='/about-me' title='About Me'></NavLink>
 			<NavLink to='/my-works' title='My works'></NavLink>
@@ -18,8 +19,8 @@ const NavBar: FC = () => {
 				<ActionButton onClickHandler={() => {}}>
 					<GlobeEuropeAfricaIcon className='w-7'></GlobeEuropeAfricaIcon>
 				</ActionButton>
-				<ActionButton onClickHandler={() => {}}>
-					<SunIcon className='w-7'></SunIcon>
+				<ActionButton onClickHandler={theme==='dark' ? () => {setTheme('light')} : () => {setTheme('dark')}}>
+					{isDarkTheme ? <SunIcon className='w-7'></SunIcon> : <MoonIcon className='w-7'></MoonIcon>}
 				</ActionButton>
 			</div>
 		</div>
