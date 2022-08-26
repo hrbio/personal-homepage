@@ -9,8 +9,8 @@ const NavLink:FC<{ to: string; title:string}> = ({to ,title }) => {
 		<Link href={to}>
 			<a
 				className={`${
-					router.pathname === to ? 'drop-shadow-xl scale-125' : 'dark:text-neutral-300 drop-shadow-lg'
-				} hover:drop-shadow-xl hover:scale-105 transition-transform`}
+					router.pathname === to ? 'drop-shadow-xl scale-125' : 'drop-shadow-lg hover:drop-shadow-xl hover:scale-105'
+				}  transition-transform`}
 			>
 				{title}
 			</a>

@@ -30,7 +30,7 @@ const NavBar: FC = () => {
 						  }
 				}
 			>
-				<Tooltip text={theme === 'dark' ? 'Light mode' : 'Dark mode'}>{ theme === 'dark' ? <SunIcon className='w-7'></SunIcon> : <MoonIcon className='w-7'></MoonIcon>}</Tooltip>
+				<Tooltip text={theme === 'dark' ? 'Light mode' : 'Dark mode'}><div className='group-hover:scale-125 transition-all'>{ theme === 'dark' ? <SunIcon className='w-7'></SunIcon> : <MoonIcon className='w-7'></MoonIcon>}</div></Tooltip>
 			</ActionButton>
 		</div>
 	);
