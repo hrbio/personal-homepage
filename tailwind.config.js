@@ -9,5 +9,7 @@ module.exports = {
 			greeting: ['B612 Mono', 'monospace'],
 		},
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/line-clamp'),
+	],
 };
