@@ -1,16 +1,16 @@
-import { FC } from 'react';
+import { FC, useEffect, useState } from 'react';
 import ActionButton from '@/UI/ActionButton';
-import {
-	MoonIcon,
-	SunIcon,
-} from '@heroicons/react/24/outline';
+import { MoonIcon, SunIcon } from '@heroicons/react/24/outline';
 import NavLink from './NavLink';
 import { useTheme } from 'next-themes';
 
 const NavBar: FC = () => {
+	const [mounted, setMounted] = useState(false);
 	const { theme, setTheme } = useTheme();
 
-	const isDarkTheme = theme === 'dark';
+	useEffect(() => {setMounted(true)}, [])
+
+	if (!mounted) return null
 
 	return (
 		<div className='flex flex-row justify-between uppercase text-lg font-bold py-16 w-full'>
@@ -29,11 +29,7 @@ const NavBar: FC = () => {
 						  }
 				}
 			>
-				{isDarkTheme ? (
-					<SunIcon className='w-7'></SunIcon>
-				) : (
-					<MoonIcon className='w-7'></MoonIcon>
-				)}
+				{ theme === 'dark' ? <SunIcon className='w-7'></SunIcon> : <MoonIcon className='w-7'></MoonIcon>}
 			</ActionButton>
 		</div>
 	);
