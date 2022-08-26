@@ -42,11 +42,9 @@ export default function Document() {
 					crossOrigin='true'
 				/>
 				<link
-					href='https://fonts.googleapis.com/css2?family=B612+Mono:ital@1&family=Fraunces:opsz,wght@9..144,900&family=Lato:wght@300;400;700&display=swap'
+					href='https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,900&family=Lato:wght@300;400;700&display=swap'
 					rel='stylesheet'
 				/>
-
-				
 			</Head>
 			<body>
 				<Main />
