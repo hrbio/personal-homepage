@@ -3,6 +3,7 @@ import ActionButton from '@/UI/ActionButton';
 import { MoonIcon, SunIcon } from '@heroicons/react/24/outline';
 import NavLink from './NavLink';
 import { useTheme } from 'next-themes';
+import Tooltip from '@/UI/Tooltip';
 
 const NavBar: FC = () => {
 	const [mounted, setMounted] = useState(false);
@@ -29,7 +30,7 @@ const NavBar: FC = () => {
 						  }
 				}
 			>
-				{ theme === 'dark' ? <SunIcon className='w-7'></SunIcon> : <MoonIcon className='w-7'></MoonIcon>}
+				<Tooltip text={theme === 'dark' ? 'Light mode' : 'Dark mode'}>{ theme === 'dark' ? <SunIcon className='w-7'></SunIcon> : <MoonIcon className='w-7'></MoonIcon>}</Tooltip>
 			</ActionButton>
 		</div>
 	);
