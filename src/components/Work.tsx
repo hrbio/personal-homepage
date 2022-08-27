@@ -17,7 +17,7 @@ const Work: FC<{ work: work }> = ({ work }) => {
 				<h1 className='font-bold text-center'>{work.title}</h1>
 				<p className='bg-sky-100 p-1 rounded-md drop-shadow'>{work.description}</p>
 			<div>
-				{work.technologies.map(e => <Technology tech={e}></Technology>)}
+				{work.technologies.map(e => <Technology key={e.name} tech={e}></Technology>)}
 			</div>
 			</div>
 		</div>
