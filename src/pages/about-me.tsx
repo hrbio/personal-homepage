@@ -11,7 +11,7 @@ const AboutMe: NextPage = () => {
 				przygodę z zawodem programisty. Wcześniej pracowałem w biurze
 				controllingu. Moje CV znajdziesz na{' '}
 				<a
-					href='https://google.com'
+					href='https://github.com/hrbio/curriculum-vitae'
 					target='_blank'
 					rel='noreferrer'
 					className='text-neutral-500 border-dashed border-neutral-500 hover:text-neutral-400 hover:border-neutral-500 border-b'
