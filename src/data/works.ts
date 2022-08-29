@@ -9,6 +9,7 @@ export interface work {
 	description: string;
 	technologies: tech[];
 	photo: string;
+	altPhoto: string;
 }
 
 
@@ -26,7 +27,8 @@ const WORKS: work[] = [{
 			icon: '/assets/tech-icons/tailwind-css.svg'
 		}
 	],
-	photo: '/assets/works-screenshots/portfolio2022.png'
+	photo: '/assets/works-screenshots/portfolio2022.png',
+	altPhoto: 'Portfolio 2022'
 },
 ]
 

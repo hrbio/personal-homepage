@@ -11,6 +11,7 @@ const Work: FC<{ work: work }> = ({ work }) => {
 					src={work.photo}
 					layout='fill'
 					objectFit='cover'
+					alt={work.altPhoto}
 				></Image>
 			</div>
 			<div className='dark:bg-stone-700 bg-gray-100 w-full drop-shadow-sm rounded-t-md shadow-[5px_0_69px_0_rgba(66,68,90,1)] px-5 py-4 self-end'>

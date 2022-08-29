@@ -11,6 +11,7 @@ const ContactMethod: FC<{ contactMethod: contactMethod }> = ({
 		<a
 			href={link}
 			target='_blank'
+			rel="noreferrer"
 			className='text-neutral-500 border-dashed border-neutral-500 hover:text-neutral-400 hover:border-neutral-500 border-b'
 		>
 			<span>{username}</span>
