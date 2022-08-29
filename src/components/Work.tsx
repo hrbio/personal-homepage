@@ -16,10 +16,14 @@ const Work: FC<{ work: work }> = ({ work }) => {
 			</div>
 			<div className='dark:bg-stone-700 bg-gray-100 w-full drop-shadow-sm rounded-t-md shadow-[5px_0_69px_0_rgba(66,68,90,1)] px-5 py-4 self-end'>
 				<h1 className='font-bold text-center mb-3'>{work.title}</h1>
-				<p className='dark:bg-stone-800 bg-sky-200 px-4 py-2 rounded-md drop-shadow'>{work.description}</p>
-			<div className='flex flex-row my-4'>
-				{work.technologies.map(e => <Technology key={e.name} tech={e}></Technology>)}
-			</div>
+				<p className='dark:bg-stone-800 bg-sky-200 px-4 py-2 rounded-md drop-shadow'>
+					{work.description}
+				</p>
+				<div className='flex flex-row my-4'>
+					{work.technologies.map((e) => (
+						<Technology key={e.name} tech={e}></Technology>
+					))}
+				</div>
 			</div>
 		</div>
 	);

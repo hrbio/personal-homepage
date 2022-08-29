@@ -1,5 +1,5 @@
 @tailwind base;
-@tailwind components; 
+@tailwind components;
 @tailwind utilities;
 
 /* Css reset from: https://piccalil.li/blog/a-modern-css-reset */
@@ -43,7 +43,8 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img,
-picture, svg {
+picture,
+svg {
 	max-width: 100%;
 	display: block;
 }
